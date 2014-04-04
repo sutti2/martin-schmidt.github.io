@@ -1,0 +1,39 @@
+<div class="alert alert-success fade in privacy-alert">
+  <h3>This is bat country!</h3>
+  <p>
+    <ul>
+      <li>I use cookies (homemade and from 3rd parties) to make this site work.</li>
+      <li>I track everything I can get with homemade and 3rd party tools.</li>
+      <li>Sooner or later all this collected data will be in the hands of really bad guys and they could use it to harm you.</li>
+      <li>My lawyers made me tell you by using this site, you are ok with this.</li>
+      <li>My work is done here. <b>Welcome to the internet!</b></li>
+    </ul>
+    <button type="button" data-dismiss="alert" aria-hidden="true" class="btn btn-default" onclick="setCookie('privacy_message','ok',20*365);">It's ok. Close this message.</button>
+    <a href="about:blank">
+      <button type="button" class="btn btn-danger">I am afraid! Bring me to my happy place, please.</button>
+    </a>
+  </p>
+</div>
+<script>
+  function setCookie(c_name,value,exdays) {
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+  }
+  function getCookie(c_name) {
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++) {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name) {
+        return unescape(y);
+      }
+    }
+  }
+  var privCookie = getCookie('privacy_message');
+  if (privCookie) {
+    $(".privacy-alert").alert('close');
+  }
+</script>

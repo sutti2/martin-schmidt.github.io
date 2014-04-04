@@ -12,11 +12,14 @@
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
     <!-- bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>  
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,31 +34,13 @@
 
     {% include navbar.html %}
 
-    <div class="container-fluid content-container">
-      <div class="site">
-        <div class="header">
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          <a class="extra" href="/">home</a>
-        </div>
+    <div class="container">
+      {% include privacy_message.html %}
 
-        {{ content }}
-
-        <div class="footer">
-          <div class="contact">
-            <p>
-              Your Name<br />
-              What You Are<br />
-              you@example.com
-            </p>
-          </div>
-          <div class="contact">
-            <p>
-              <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-              <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-            </p>
-          </div>
-        </div>
-      </div>
+      {{ content }}
     </div>
-  </body>
+
+  </div>
+  {% include footer.html %}
+</body>
 </html>
