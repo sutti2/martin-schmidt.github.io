@@ -31,6 +31,12 @@
 
   </head>
   <body>
+    
+    <script>
+    if (window.location.protocol != "https:" && window.location.hostname == "martin-schmidt.github.io" ) {
+      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    }
+    </script>
 
     {% include navbar.html %}
 
