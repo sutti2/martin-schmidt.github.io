@@ -1,54 +1,25 @@
 body {
   display: block;
-  background: #333;
-  color: #ddd;
-}
-
-.navbar-brand:hover {
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
 }
 
 .navbar-inverse .navbar-brand {
   color: #00ff00;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(0,255,0,.4);
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-  color: #ddd;
+  color: #fff;
   background-color: transparent;
+  text-shadow: 0 1px 0 rgba(255,255,255,.10), 0 0 30px rgba(255,255,255,.40);
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #c7254e;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(199,37,78,.4);
+  color: #fff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #00ff00;
-}
-
-.indexitem {
-  padding-top: 9px;
-  padding-right: 14px;
-  padding-bottom: 9px;
-  padding-left: 14px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  background: #3d3d3d;
-  box-shadow: 0 5px 30px rgba(0,0,0,.3);
-  cursor: pointer;
-}
-
-.modal-dialog {
-  width: 90%;
-}
-
-.modal-footer {
-  background: #3d3d3d;
-  margin-top: 0px;
-}
-
-.modal-header, .modal-body {
-  background: #3d3d3d;
 }
 
 .footer {

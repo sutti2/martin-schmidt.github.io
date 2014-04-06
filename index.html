@@ -10,7 +10,7 @@ title: Martin Schmidt's Blog
   {% for post in site.posts %}
   {% capture post_count %}{{ post_count | plus: '1' }}{% endcapture %}
 
-  <div class="row indexitem modaltrigger{{ post_count }}">
+  <div class="row">
     <a href="{{ post.url }}">
       <h2>
         {{ post.title }}
@@ -23,38 +23,6 @@ title: Martin Schmidt's Blog
       {{ post.excerpt }}
     </p>
   </div>
-
-  <!-- Modal -->
-  <div id="modal{{ post_count }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel{{ post_count }}" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close &times;</button>
-          <a href="{{ post.url }}">
-            <h2 class="modal-title">{{ post.title }}</h4>
-          </a>
-        </div>
-        <div class="modal-body">
-          {{ post.content }}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close &times;</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    var $modal{{ post_count }} = $('#modal{{ post_count }}').modal({
-      show: false,
-      keyboard: true
-    });
-    $('.modaltrigger{{ post_count }}').on('click', function() {
-      $modal{{ post_count }}.modal('show');
-      console.log($modal{{ post_count }});
-    });
-  </script>
-
 
   {% endfor %}
 
