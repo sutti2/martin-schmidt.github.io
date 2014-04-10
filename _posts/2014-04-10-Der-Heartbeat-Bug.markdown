@@ -13,7 +13,7 @@ Was für die wichtigen 1000 gilt muss aber nicht unbedingt auch für die noch wi
 
 ### bobSSL hat Heartbleed und es trifft alle
 Alice betreibt einen Webshop, hantiert dort mit allerhand persönlichen Daten und den unglaublich sicheren Passwörtern (die sind so sicher, die kann man für alles nehmen!) ihrer Kunden herum. Damit jeder sieht wie vertrauenswürdig ihr Shop ist, klickt sie sich ein SSL-Zertifikat beim Anbieter bobSSL.  
-Der Anbieter ist besonders gut für Alice geeignet, weil alles ganz easy über den Browser läuft, selbst der private Key (doch, das gibt's!). Blöd nur, dass bobSSL eine kaputte openSSL-Version benutzt und seit Monaten von Charlie dem Schelm abgeschnorchelt wird. Alice's SSL ist also kompromittiert, obwohl sie selbst niemals eine eine der vom Heartbleed-Bug betroffende openSSL-Version verwendet hat.  
+Der Anbieter ist besonders gut für Alice geeignet, weil alles ganz easy über den Browser läuft, selbst der private Key (doch, das gibt's!). Blöd nur, dass bobSSL eine kaputte openSSL-Version benutzt und seit Monaten von Charlie dem Schelm abgeschnorchelt wird. Alice's SSL ist also kompromittiert, obwohl sie selbst niemals eine vom Heartbleed-Bug betroffende openSSL-Version verwendet hat.  
 Daraus ergibt sich, dass alle Kennwörter (die sind so sicher, die kann man für alles nehmen!!1elf!) ihrer Kunden verbrannt sind und somit alle E-Mail-Konten, Paypal- und Facebook-Accounts der Kunden von Alice als kompromittiert gelten dürfen. Und von der NSA habe ich noch gar nicht angefangen!
 
 ### Nein, Du warst nicht schnell genug
