@@ -2,7 +2,7 @@
 layout: post
 title:  "Der (wide)openSSL-Heartbleed-Bug oder: ändere alle Passwörter und Keys ... jetzt"
 date:   2014-04-10 14:15:49
-categories: openSSL sicherheit
+categories: sicherheit heartbleed
 ---
 
 ### Yüahh, das Internet ist kaputt!
