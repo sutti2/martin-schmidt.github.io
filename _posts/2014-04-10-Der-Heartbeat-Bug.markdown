@@ -29,7 +29,7 @@ Soeben erhielt ich eine Mail von einem guten Freund. Er lebt in einem rechtfreie
 {% highlight ruby %}
 # 10.04.2014 ca. 12.00 Uhr
 
-Anzahl IP's:         65534
+Anzahl IPs:          65534
 Port 443 offen:       5326
 Port 443 zu:          4080
 Port 443 gefiltert:   4930
