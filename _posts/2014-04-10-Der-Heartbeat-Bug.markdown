@@ -22,7 +22,7 @@ Selbst wer ganz fest daran glaubt (bitte,bitte,bitte), dass vor dem Public Discl
 
 ### Krisenmanagement, nein Danke!
 Wärend Alice sich ganz vorbildlich neue Keys an ihre kompromottierte web.de-Addresse schicken ließ (der Shop ist wichtiger als das E-Mail-Kennwort zu ändern, den Kunden zuliebe!), haben manche den Knall anscheinend noch immer nicht gehört.  
-Soeben erhielt eine Mail von einem guten Freund. Er lebt in einem rechtfreien Raum auf einer Insel im Südpazifik und hat sich den Spaß erlaubt ein /16-Netz nach verwundbaren Webserver-Installationen abzuklappern. Ziel waren Root-Server im Rechenzentrum einer deutschen Internet-Hosting-Gesellschaft. Dies sind seine Ergebnisse:
+Soeben erhielt ich eine Mail von einem guten Freund. Er lebt in einem rechtfreien Raum auf einer Insel im Südpazifik und hat sich den Spaß erlaubt ein /16-Netz nach verwundbaren Webserver-Installationen abzuklappern. Ziel waren Root-Server im Rechenzentrum einer deutschen Internet-Hosting-Gesellschaft. Dies sind seine Ergebnisse:
 
 #### > 10% aller erreichbaren Systeme noch immer verwundbar
 
